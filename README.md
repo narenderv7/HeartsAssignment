@@ -1,28 +1,24 @@
 # HearstAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.
+This project was generated with Angular CLI and used Sass.
 
-## Development server
+## Dependencies
+`NPM`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Intsall npm
+ `npm install`
+ If you don't have Angular Cli globally installed,please use 
+ `npm install -g @angular/cli`
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+## Serving an Angular project via a development server
+Run `ng serve`.
+Navigate to `http://localhost:4200/`.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Test Aproach
+  - Test cases are written using Jasmine
+  - The Styling is writtin using SASS.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

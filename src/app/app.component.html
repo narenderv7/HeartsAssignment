@@ -1,3 +1,13 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <div>
+      <app-dropdown [data]="makes" [name]="name" (eventNotify)="selectedBrandId($event)"></app-dropdown>
+      <div *ngIf="models.length">
+        <app-dropdown [data]="models" [name]="name" (eventNotify)="selectedModelId($event)"></app-dropdown>
+      </div>
+    </div>
+    <div class="content" *ngIf="model">
+      <app-model-view [brandName]="brandName" [model]="model"></app-model-view>
+    </div>
+  </div>
+</div>

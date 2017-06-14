@@ -1,0 +1,10 @@
+<div class="search_categories">
+  <div class="select">
+      <select #parent (change)="onSelectItem(parent.value)">
+        <option value="">Select a {{name}}</option>
+        <option *ngFor="let d of data" [value]="d.make || d.model">  
+        {{d.name}}
+      </option>
+      </select>
+  </div>
+</div>
