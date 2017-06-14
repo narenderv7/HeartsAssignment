@@ -5,8 +5,9 @@ import { Component, Input , Output ,EventEmitter } from '@angular/core';
   templateUrl: './dropdown.component.html',
   styleUrls: ['./dropdown.component.sass']
 })
-export class DropdownComponent {
 
+// Reusable DropDown Component
+export class DropdownComponent {
   @Input() private name : String;
   @Input() private data : Array<any>;
   @Output() private eventNotify:EventEmitter<any> = new EventEmitter<any>() ;

@@ -19,6 +19,7 @@ export class AppComponent implements OnInit{
 
   ngOnInit() {
     this.makes = [];
+    // Calling http service to get Car Makes
     this.httpService.getBrands().subscribe((res) => {
       this.makes.push(res);
       this.name = "Brand"
@@ -28,6 +29,7 @@ export class AppComponent implements OnInit{
   selectedBrandId(id) {
     this.model = null;
     this.models = [];
+    // Calling http service to get Car Models for selected Make
     this.httpService.getModels(id).subscribe((res) => {
       this.models.push(res);
       this.name = "Model"

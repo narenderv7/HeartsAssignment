@@ -12,12 +12,14 @@ export class HttpService {
         this.http = http;
     };
 
+  // Method to get the Car Makes 
   public getBrands(){
       return this.http.get(this.url+'/makes')
         .mergeMap((res) => res.json())
         .filter((res) => res['is_in_navigation'] );
   };
 
+  // Method to get the Car Models based on selected Make. 
   public getModels(brandId : string){
       return this.http.get(this.url+'/makes/'+brandId)
         .mergeMap((res) => res.json().models)

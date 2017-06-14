@@ -46,17 +46,14 @@ describe('AppComponent', () => {
   }));
 
   it(`should have as title 'app works!'`, async(() => {
-    //const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app works!');
   }));
 
   it('should get the brands', async(() => {
-    //const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     app.ngOnInit();
     fixture.detectChanges();
-    console.log('makes log', app.makes);
     expect(app.makes.length).toBe(2);
   }))
 
